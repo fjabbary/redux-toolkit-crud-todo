@@ -2,37 +2,112 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  height: 80px;
+  background: rgb(44, 65, 133);
   display: flex;
+  padding-left: 30px;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 100px;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.header a {
+  color: #fff;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.user-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.user-card {
+  background: rgb(197, 195, 195);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-card:hover {
+  background: rgb(168, 167, 167);
+}
+
+.user-card-info {
+  text-align: left;
+}
+
+.user-card-icons svg:first-child {
+  margin-right: 10px;
+  color: rgb(3, 3, 124);
+}
+
+.user-card-icons svg:nth-child(2){
+  color: rgb(132, 3, 3);
+} 
+
+.user-card-icons svg {
+  cursor: pointer;
+}
+
+.user-card-icons {
+  font-size: 1.25em;
+}
+
+.add-user {
+  width: 300px;
+  margin: auto;
+  text-align: left;
+}
+
+.add-user label {
+  margin-bottom: 10px;
+}
+
+.add-user input {
+  width: 100%;
+  height: 28px;
+  margin: 7px 0;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding:0 10px;
+}
+
+.add-user .text-input:first-child {
+  margin-bottom: 10px;
+}
+
+.btn {
+ color: #fff;
+ background-color: rgb(93, 93, 253);
+ padding: 10px 15px;
+ border: none;
+ margin-top: 10px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(67, 67, 182);
+}
+
+.btn-add {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 40px;
 }
